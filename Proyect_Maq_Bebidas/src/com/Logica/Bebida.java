@@ -13,15 +13,16 @@ package com.Logica;
 public class Bebida {
     int id;
     String nombre;
-    double precio_pesos;
-
+    int precio_pesos;
+    int cantidad;
     public Bebida() {
     }
 
-    public Bebida(int id, String nombre, double precio_pesos) {
+    public Bebida(int id, String nombre, int precio_pesos, int cantidad) {
         this.id = id;
         this.nombre = nombre;
         this.precio_pesos = precio_pesos;
+        this.cantidad = cantidad;
     }
 
     public int getId() {
@@ -40,17 +41,24 @@ public class Bebida {
         this.nombre = nombre;
     }
 
-    public double getPrecio_pesos() {
+    public int getPrecio_pesos() {
         return precio_pesos;
     }
 
-    public void setPrecio_pesos(double precio_pesos) {
+    public void setPrecio_pesos(int precio_pesos) {
         this.precio_pesos = precio_pesos;
     }
 
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
     @Override
     public String toString() {
-        return "Bebida{" + "id=" + id + ", nombre=" + nombre + ", precio_pesos=" + precio_pesos + '}';
+        return "Bebida{" + "id=" + id + ", nombre=" + nombre + ", precio_pesos=" + precio_pesos + ", Cantidad=" + cantidad +'}';
     }
     
     
