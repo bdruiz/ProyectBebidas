@@ -1,0 +1,7 @@
+Falta controlar
+1) bebidas = 0
+2)descuenta -2 (moneda)
+3) agregar contabilidad
+4) Agregar inventarios
+5) si la maquina se queda sin cambio ...
+6)Hilos Independientes

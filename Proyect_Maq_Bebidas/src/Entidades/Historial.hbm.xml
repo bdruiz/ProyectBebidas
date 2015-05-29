@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28/05/2015 10:06:36 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Entidades.Historial" table="historial" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="bebida" class="Entidades.Bebida" fetch="select">
+            <column name="id_bebida" not-null="true" />
+        </many-to-one>
+        <property name="fecha" type="string">
+            <column name="fecha" length="2000000000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
